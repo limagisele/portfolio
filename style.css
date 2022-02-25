@@ -164,9 +164,10 @@ main h1 {
 main .listing {
     display: flex;
     flex-direction: column;
-    height: 70vw;
+    height: 60vw;
     overflow: hidden;
     margin: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 main .listing h2 {
     width: 100%;
@@ -187,7 +188,7 @@ main .listing time {
         flex-direction: row;
         flex-wrap: wrap;
         width: calc(100%/2 - 2rem);
-        height: 50vw;
+        height: 40vw;
     }
 }
 @media only screen and (min-width: 851px) {
@@ -195,7 +196,7 @@ main .listing time {
         flex-direction: row;
         flex-wrap: wrap;
         width: calc(100%/3 - 2rem);
-        height: 40vw;
+        height: 30vw;
     }
 }
 
