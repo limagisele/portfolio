@@ -191,7 +191,7 @@ main .listing time {
         height: 40vw;
     }
 }
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 851px) and (max-width: 1200px) {
     main .listing {
         flex-direction: row;
         flex-wrap: wrap;
@@ -199,4 +199,11 @@ main .listing time {
         height: 30vw;
     }
 }
-
+@media only screen and (min-width: 1201px) {
+    main .listing {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: calc(100%/4 - 2rem);
+        height: 30vw;
+    }
+}
