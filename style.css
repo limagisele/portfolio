@@ -82,10 +82,12 @@ main {
     flex-wrap: wrap;
 }
 main .about {
-    padding: 1rem;
+    margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
 }
 main .about img {
     width: 100%;
@@ -98,7 +100,7 @@ main h1 {
     font-family: var(--font-heading);
     color: var(--font-color);
     font-weight: bolder;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     background-color: var(--background-color);
     color: black;
@@ -108,9 +110,10 @@ main h1 {
 @media only screen and (min-width: 450px) and (max-width: 999px) {
     main .about {
         flex-wrap: nowrap;
+        align-items: center;
         justify-content: space-between;
         padding-top: 0;
-        align-items: center;
+        height: 20rem;
     }
     main .about img {
         width: 49%;
@@ -123,24 +126,29 @@ main h1 {
     }
 }
 @media only screen and (min-width: 1000px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+    nav ul li {
+        padding: 0 1rem;
+    }
     main .about {
-        padding-top: 0;
-        align-items: center;
         justify-content: space-between;
-        width: 50%;
+        padding-top: 0;
+        width: calc(100%/2 - 2rem);
+        height: 14rem;
     }
     main .about img {
-        width: 48%;
-    
+        width: 47%;
     }
     main .about .text {
-       width: 48%;
-       margin: 0.5rem;
+       width: 47%;
+       margin: 0.5rem;       
     }
     main .about:nth-of-type(2) img {
         order: 1;
     }
     main .about:nth-of-type(3) {
-        margin: auto;
+        margin: 1rem auto 1rem auto;
     }
 }
