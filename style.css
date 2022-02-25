@@ -77,19 +77,22 @@ footer .social-button {
     height: 0.5rem;
 }
 
-.about {
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+main .about {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
-.about img {
+main .about img {
     width: 100%;
     margin-bottom: 0.6rem;
 }
-main{
-    /* display: flex;
-    flex-wrap: wrap; */
+main .about .text h3 {
+    padding-bottom: 1.5rem;
 }
 main h1 {
     font-family: var(--font-heading);
@@ -102,18 +105,42 @@ main h1 {
     width: 100%;
     margin-bottom: 1rem;
 }
-
-@media only screen and (min-width: 401px) {
-    section .about {
-
-        width: 49%;
+@media only screen and (min-width: 450px) and (max-width: 999px) {
+    main .about {
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding-top: 0;
+        align-items: center;
     }
-    section .about img {
+    main .about img {
         width: 49%;
     }
-    section .about p {
+    main .about .text {
         width: 49%;
+    }
+    main .about:nth-of-type(2) img {
+        order: 1;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    main .about {
+        padding-top: 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+    main .about img {
+        width: 48%;
+    
+    }
+    main .about .text {
+       width: 48%;
+       margin: 0.5rem;
+    }
+    main .about:nth-of-type(2) img {
+        order: 1;
+    }
+    main .about:nth-of-type(3) {
+        margin: auto;
     }
 }
