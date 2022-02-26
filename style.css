@@ -174,10 +174,11 @@ main h1 {
     overflow: hidden;
     margin: 1rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    max-height: 300px;
 }
 .listing h2 {
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .listing h2 a {
     font-family: var(--font-heading);
@@ -190,23 +191,20 @@ main h1 {
     margin-left: auto;
     padding: 0.3rem;
 }
-@media only screen and (min-width: 450px) and (max-width: 800px) {
+@media only screen and (min-width: 500px) and (max-width: 900px) {
     .listing {
         flex-direction: row;
         flex-wrap: wrap;
         width: calc(100%/2 - 2rem);
         height: 60vw;
     }
-    .listing h2 {
-        font-size: 1.2rem;
-    }
 }
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
     .listing {
         flex-direction: row;
         flex-wrap: wrap;
         width: calc(100%/3 - 2rem);
-        height: 30vw;
+        height: 40vw;
     }
 }
 @media only screen and (min-width: 1201px) {
@@ -230,11 +228,12 @@ main h1 {
     color: var(--font-color);
 }
 .post time {
-    margin-top: 0.3rem;
+    margin-top: 0.9rem;
     text-align: right;
     font-family: var(--font-text);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border-bottom: 2px dotted var(--background-color);
+    padding-bottom: 0.5rem;
     width: 100%;
 }
 .post p {
@@ -290,7 +289,7 @@ main h1 {
         margin-top: 0.7rem;
         position: absolute;
         right: 0;
-        top: 50px;
+        top: 75px;
         overflow: hidden;
         max-height: 400px;
         max-width:400px;
@@ -315,13 +314,13 @@ main h1 {
         margin-top: 0.7rem;
         position: absolute;
         right: 0;
-        top: 50px;
+        top: 75px;
         overflow: hidden;
         max-height: 400px;
         max-width: 400px;
     }
     #post-footer {
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
 }
 
