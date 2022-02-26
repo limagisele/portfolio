@@ -12,6 +12,7 @@
     --font-text: "Lora", serif;
     --background-color: rgb(222, 232, 235);
 }
+
 /* Navbar styles */
 nav ul {
     display: flex;
@@ -25,6 +26,7 @@ nav ul li a {
     font-family: var(--font-text);
     font-size: 0.8rem;
 }
+
 /* Index page styles */
 #hero {
     text-align: center;
@@ -65,11 +67,12 @@ nav ul li a {
         height: 25rem;
     }
 }
+
 /* Footer Styles */
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 footer p {
     width: 100%;
@@ -81,10 +84,11 @@ footer p {
     background-color: rgb(222, 232, 235);
 }
 .social-button {
-    margin: 0.5rem;
-    font-size: 2.2rem;
+    margin: 0.5rem 2.5rem;
+    font-size: 2.5rem;
     color: black;
 }
+
 /* About page styles */
 main {
     display: flex;
@@ -161,6 +165,7 @@ main h1 {
         margin: 1rem auto 1rem auto;
     }
 }
+
 /* Blog page styles */
 .listing {
     display: flex;
@@ -212,6 +217,7 @@ main h1 {
         height: 30vw;
     }
 }
+
 /* Blog posts styles */
 .post {
     display: flex;
@@ -318,6 +324,7 @@ main h1 {
         margin-top: 1rem;
     }
 }
+
 /* Contact page styles */
 .contact {
     display: flex;
@@ -327,18 +334,19 @@ main h1 {
     align-items: center;
     width: 100%;
 }
-.contact h2 {
+.intro h2 {
     font-family: var(--font-heading);
     color: var(--font-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 1rem;
 }
-.contact h3 {
+.intro h3 {
     font-family: var(--font-heading);
     border: 1px solid rgb(249, 211, 217);
     background-color: rgb(249, 211, 217);
     text-align: center;
+    padding: 0.6rem 0;
 }
 .details {
     display: flex;
@@ -358,7 +366,65 @@ form {
     flex-direction: column;
     width: 100%;
     font-family: var(--font-text);
+    color: var(--font-color);
 }
 input {
     padding: 10px;
+}
+input[type=submit] {
+    color: var(--font-color);
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .intro h2 {
+        order: 1;
+        margin: 1rem 0;
+    }
+    form {
+        order: 1;
+        width: 90%;
+    }
+    input[type=submit] {
+        width: 10rem;
+        margin-left: auto;
+    }
+}
+@media only screen and (min-width: 901px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        margin: 2rem 4rem;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .intro h2 {
+        order: 1;
+        margin: 1rem 0;
+    }
+    .details {
+        order: 1;
+        position: absolute;
+        left: 4rem;
+        top: 6rem;
+    }
+    form {
+        width: 50%;
+    }
+    input[type=submit] {
+        width: 10rem;
+        margin-left: auto;
+    }
 }
