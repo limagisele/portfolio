@@ -207,3 +207,70 @@ main .listing time {
         height: 30vw;
     }
 }
+/* Blog posts styles */
+main .post {
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .post h2 {
+    font-family: var(--font-heading);
+    color: var(--font-color);
+}
+main .post time {
+    margin-top: 0.3rem;
+    text-align: right;
+    font-family: var(--font-text);
+    font-size: 0.7rem;
+    border-bottom: 2px dotted var(--background-color);
+    width: 100%;
+}
+main .post p {
+    margin: 0.7rem 0;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-family: var(--font-text);
+}
+main .post img {
+    width: 100%;
+}
+main .post .blog-button {
+    text-decoration: none;
+    font-family: var(--font-text);
+    color: var(--font-color);
+    border: 1px solid var(--background-color);
+    padding: 0.5rem;
+    width: 9rem;
+    text-align: center;
+}
+@media only screen and (min-width: 500px) and (max-width: 699px){
+    main .post {
+        align-items: flex-end;
+        margin: 1rem 2rem;
+    }
+    main .post p:nth-of-type(1) {
+        width: 50%;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    main .post img {
+        width: 50%;
+        margin-top: 0.7rem;
+    }
+}
+@media only screen and (min-width:700px) {
+    main .post {
+        align-items: flex-end;
+        margin: 1rem 2rem;
+    }
+    main .post p {
+        width: 50%;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    main .post img {
+        width: 50%;
+        margin-top: 0.7rem;
+    }
+}
