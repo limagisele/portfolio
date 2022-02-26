@@ -89,7 +89,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-main .about {
+.about {
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -97,11 +97,11 @@ main .about {
     padding-bottom: 1.5rem;
     overflow: hidden;
 }
-main .about img {
+.about img {
     width: 100%;
     margin-bottom: 0.6rem;
 }
-main .about .text h3 {
+.about .text h3 {
     padding-bottom: 1.5rem;
 }
 main h1 {
@@ -115,53 +115,53 @@ main h1 {
     width: 100%;
     margin-bottom: 1rem;
 }
-@media only screen and (min-width: 450px) and (max-width: 999px) {
-    main .about {
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .about {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
         padding-top: 0;
         height: 20rem;
     }
-    main .about img {
+    .about img {
         width: 49%;
     }
-    main .about .text {
+    .about .text {
         width: 49%;
     }
-    main .about:nth-of-type(2) img {
+    .about:nth-of-type(2) img {
         order: 1;
     }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
     nav ul {
         justify-content: flex-end;
     }
     nav ul li {
         padding: 0 1rem;
     }
-    main .about {
+    .about {
         justify-content: space-between;
         padding-top: 0;
         width: calc(100%/2 - 2rem);
         height: 14rem;
     }
-    main .about img {
+    .about img {
         width: 47%;
     }
-    main .about .text {
+    .about .text {
        width: 47%;
        margin: 0.5rem;       
     }
-    main .about:nth-of-type(2) img {
+    .about:nth-of-type(2) img {
         order: 1;
     }
-    main .about:nth-of-type(3) {
+    .about:nth-of-type(3) {
         margin: 1rem auto 1rem auto;
     }
 }
 /* Blog page styles */
-main .listing {
+.listing {
     display: flex;
     flex-direction: column;
     height: 60vw;
@@ -169,22 +169,22 @@ main .listing {
     margin: 1rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-main .listing h2 {
+.listing h2 {
     width: 100%;
 }
-main .listing h2 a {
+.listing h2 a {
     font-family: var(--font-heading);
     color: var(--font-color);
     text-decoration: none;
 }
-main .listing time {
+.listing time {
     font-family: var(--font-text);
     font-size: 0.7rem;
     margin-left: auto;
     padding: 0.3rem;
 }
 @media only screen and (min-width: 450px) and (max-width: 850px) {
-    main .listing {
+    .listing {
         flex-direction: row;
         flex-wrap: wrap;
         width: calc(100%/2 - 2rem);
@@ -192,7 +192,7 @@ main .listing time {
     }
 }
 @media only screen and (min-width: 851px) and (max-width: 1200px) {
-    main .listing {
+    .listing {
         flex-direction: row;
         flex-wrap: wrap;
         width: calc(100%/3 - 2rem);
@@ -200,7 +200,7 @@ main .listing time {
     }
 }
 @media only screen and (min-width: 1201px) {
-    main .listing {
+    .listing {
         flex-direction: row;
         flex-wrap: wrap;
         width: calc(100%/4 - 2rem);
@@ -208,17 +208,17 @@ main .listing time {
     }
 }
 /* Blog posts styles */
-main .post {
+.post {
     display: flex;
+    flex-direction: column;
     margin: 1rem;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
-main .post h2 {
+.post h2 {
     font-family: var(--font-heading);
     color: var(--font-color);
 }
-main .post time {
+.post time {
     margin-top: 0.3rem;
     text-align: right;
     font-family: var(--font-text);
@@ -226,16 +226,13 @@ main .post time {
     border-bottom: 2px dotted var(--background-color);
     width: 100%;
 }
-main .post p {
+.post p {
     margin: 0.7rem 0;
     text-align: justify;
     font-size: 1.1rem;
     font-family: var(--font-text);
 }
-main .post img {
-    width: 100%;
-}
-main .post .blog-button {
+.post .blog-button {
     text-decoration: none;
     font-family: var(--font-text);
     color: var(--font-color);
@@ -244,33 +241,75 @@ main .post .blog-button {
     width: 9rem;
     text-align: center;
 }
-@media only screen and (min-width: 500px) and (max-width: 699px){
-    main .post {
-        align-items: flex-end;
+#post-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media only screen and (min-width: 500px) and (max-width: 799px){
+    .post {
         margin: 1rem 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
     }
-    main .post p:nth-of-type(1) {
+    .post p:nth-of-type(1) {
         width: 50%;
         padding-right: 1.5rem;
         margin-bottom: 0;
     }
-    main .post img {
+    .post img {
         width: 50%;
         margin-top: 0.7rem;
     }
 }
-@media only screen and (min-width:700px) {
-    main .post {
-        align-items: flex-end;
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    .post {
+        flex-direction: column;
         margin: 1rem 2rem;
+        position: relative;
     }
-    main .post p {
+    .post p {
         width: 50%;
         padding-right: 1.5rem;
         margin-bottom: 0;
     }
-    main .post img {
+    .post img {
         width: 50%;
         margin-top: 0.7rem;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        overflow: hidden;
+        max-height: 400px;
+        max-width:400px;
+    }
+    #post-footer {
+        margin-top: 1rem;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    .post {
+        flex-direction: column;
+        margin: 1rem 2rem;
+        position: relative;
+    }
+    .post p {
+        width: 50%;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .post img {
+        width: 50%;
+        margin-top: 0.7rem;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        overflow: hidden;
+        max-height: 400px;
+        max-width: 400px;
+    }
+    #post-footer {
+        margin-top: 1rem;
     }
 }
