@@ -438,28 +438,31 @@ input[type=submit] {
     flex-direction: column;
     align-items: center;
     margin: 0 1rem 1.5rem 1rem;
-    width: 100%;
     overflow: hidden;
     font-family: var(--font-text);
+    text-align: justify;
 }
 .career-button {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .career-button a {
     text-decoration: none;
     font-family: var(--font-heading);
     color: black;
     border: 1px solid black;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background-color: var(--focus-color);
-    padding: 0.3rem 0.8rem;
-    margin-bottom: 2rem;
+    padding: 0.6rem 0;
+    margin-bottom: 1rem;
     text-align: center;
-    width: 7rem;
+    width: 100%;
+    height:
 }
 #current-button {
     background-color: white;
+    border: 2px solid black;
 }
 .work figure {
     margin: 1.4rem 0;
@@ -489,14 +492,102 @@ input[type=submit] {
     padding-left: 1rem;
     width: 13rem;
 }
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 550px) and (max-width: 899px) {
     .work {
-        flex-direction: row;
-        flex-wrap: wrap;
+        align-items: flex-start;
+        position: relative;
+        margin: 0 2rem 1.5rem 2rem;
+    }
+    .work p {
+        width: 49%;
+        margin-top: 1.5rem;
+    }
+    .work figure {
+        width: 49%;
+        order: 1;
+        margin-bottom: 0;
+        height:40vw;
+    }
+    .skills {
+        width: 48%;
+        position: absolute;
+        right: 0;
+        top: 6rem;
+    }
+    .skills p {
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+    .work {
+        align-items: flex-start;
+        position: relative;
+        margin: 0 0 1.5rem 7rem;
+        
     }
     .career-button {
-        width: 100%;
+        width: 70%;
+        margin: auto;
     }
-
+    .work p {
+        width: 50%;
+        margin-top: 1.5rem;
+    }
+    .work figure {
+        width: 50%;
+        order: 1;
+        margin-bottom: 0;
+        height: 30vw;
+    }
+    .skills {
+        width: 48%;
+        position: absolute;
+        right: 0;
+        top: 6rem;
+    }
+    .skills p {
+        width: 80%;
+        margin: auto;
+    }
+    .skills ul li {
+        width: 100%;
+        padding-left: 35%;
+    }
 }
-
+@media only screen and (min-width: 1400px) {
+    .work {
+        align-items: flex-start;
+        position: relative;
+        margin: 0 0 2rem 13rem;
+    }
+    .career-button {
+        width: 70%;
+        margin: auto;
+    }
+    .work p {
+        width: 50%;
+        margin-top: 1.5rem;
+    }
+    .work figure {
+        width: 50%;
+        order: 1;
+        margin-bottom: 0;
+        height: 30vw;
+    }
+    .skills {
+        width: 48%;
+        position: absolute;
+        right: 0;
+        top: 6rem;
+    }
+    .skills p {
+        width: 60%;
+        margin: auto;
+    }
+    .skills ul li {
+        width: 100%;
+        padding-left: 35%;
+        margin-top: 3rem;
+    }
+}
