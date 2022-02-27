@@ -11,6 +11,7 @@
     --font-heading: "Ubuntu Mono", monospace;
     --font-text: "Lora", serif;
     --background-color: rgb(222, 232, 235);
+    --focus-color: rgb(249, 211, 217);
 }
 
 /* Navbar styles */
@@ -345,8 +346,8 @@ main h1 {
 }
 .intro h3 {
     font-family: var(--font-heading);
-    border: 1px solid rgb(249, 211, 217);
-    background-color: rgb(249, 211, 217);
+    border: 1px solid var(--focus-color);
+    background-color: var(--focus-color);
     text-align: center;
     padding: 0.6rem 0;
 }
@@ -432,3 +433,70 @@ input[type=submit] {
 }
 
 /* Work page styles */
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem 1.5rem 1rem;
+    width: 100%;
+    overflow: hidden;
+    font-family: var(--font-text);
+}
+.career-button {
+    display: flex;
+    justify-content: center;
+}
+.career-button a {
+    text-decoration: none;
+    font-family: var(--font-heading);
+    color: black;
+    border: 1px solid black;
+    font-size: 0.9rem;
+    background-color: var(--focus-color);
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 7rem;
+}
+#current-button {
+    background-color: white;
+}
+.work figure {
+    margin: 1.4rem 0;
+    height: 60vw;
+    overflow: hidden;
+}
+.work img {
+    margin: auto;
+    width: 100%;
+}
+.skills p {
+    text-align: center;
+    border-bottom: 3px dotted var(--background-color);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+.skills ul li{
+    list-style-type: none;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    width: 13rem;
+}
+@media only screen and (min-width: 550px) {
+    .work {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .career-button {
+        width: 100%;
+    }
+
+}
+
