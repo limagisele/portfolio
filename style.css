@@ -1,5 +1,5 @@
 /* Global styles */
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 :root {
-    --font-color: rgb(70, 108, 117);
+    --font-color: rgb(3, 98, 51);
     --font-heading: "Ubuntu Mono", monospace;
     --font-text: "Lora", serif;
     --background-color: rgb(222, 232, 235);
@@ -32,19 +32,21 @@ nav ul li a {
 #hero {
     text-align: center;
     line-height: 2;
-    background-image: url("https://www.placeimg.com/640/640/nature");
+    background-image: url("images/cactus.jpg");
     color: white;
-    margin-bottom: 2rem;
     background-size: cover;
     height: 40rem;
     font-family: var(--font-heading);
     font-size: 1rem;
+    font-weight: 700;
 }
 #hero h2 {
     font-size: 1.1rem;
+    margin: 1rem;
+    
 }
 #hero .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 40rem;
     display: flex;
     flex-direction: column;
@@ -56,16 +58,21 @@ nav ul li a {
     color: white;
     border: 2px solid white;
     padding: 0.3rem;
-    font-size: 0.9rem;
     width: 25vw;
     max-width: 120px;
     margin: 2rem auto;
     font-family: var(--font-text);
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 450px) {
     #hero,
     #hero .overlay {
-        height: 25rem;
+        height: 50rem;
+    }
+    #hero h1{
+        font-size: 2rem;
+    }
+    #hero h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -158,6 +165,7 @@ main h1 {
     margin: 1rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     max-height: 300px;
+    border: 2px solid var(--focus-color)
 }
 .listing h2 {
     width: 100%;
@@ -382,7 +390,7 @@ input[type=submit] {
 @media only screen and (min-width: 901px) {
     .contact {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-start;
         position: relative;
         margin: 2rem 4rem;
@@ -399,11 +407,11 @@ input[type=submit] {
     .details {
         order: 1;
         position: absolute;
-        left: 4rem;
+        left: 6rem;
         top: 6rem;
     }
     form {
-        width: 50%;
+        width: 49%;
     }
     input[type=submit] {
         width: 10rem;
@@ -613,7 +621,7 @@ footer p {
     padding: 0.3rem 0;
     text-align: center;
     color: var(--font-color);
-    font-size: 1rem;
+    font-size: 1.3rem;
     background-color: var(--background-color);
 }
 .social-button {
