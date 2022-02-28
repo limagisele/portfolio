@@ -94,7 +94,7 @@ main #overlay {
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
-
+    justify-content: center;
 }
 
 /* About page styles */
@@ -178,9 +178,10 @@ main h1 {
 .listing {
     display: flex;
     flex-direction: column;
-    height: 70vw;
+    max-height: 70vw;
+    width: 70vw;
     overflow: hidden;
-    margin: 1rem;
+    margin: 1rem auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     max-height: 300px;
     border: 2px solid var(--focus-color);
@@ -188,7 +189,9 @@ main h1 {
 }
 .listing h2 {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    padding-top: 0.6rem;
+    margin-left: 0.5rem;
 }
 .listing h2 a {
     font-family: var(--font-heading);
@@ -203,29 +206,23 @@ main h1 {
 }
 .listing img {
     border-top: 1px solid black;
+    width: 100%;
 }
-@media only screen and (min-width: 500px) and (max-width: 900px) {
+@media only screen and (min-width: 500px) and (max-width: 800px) {
     .listing {
         flex-direction: row;
         flex-wrap: wrap;
-        width: calc(100%/2 - 2rem);
-        height: 60vw;
-    }
-}
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
-    .listing {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: calc(100%/3 - 2rem);
+        width: 40%;
         height: 40vw;
     }
 }
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 801px) {
     .listing {
         flex-direction: row;
         flex-wrap: wrap;
-        width: calc(100%/4 - 2rem);
+        width: calc(100%/4 - 4rem);
         height: 30vw;
+        margin: 3rem;
     }
 }
 
@@ -639,8 +636,8 @@ footer {
 }
 footer p {
     width: 100%;
-    height: 2rem;
-    padding: 0.3rem 0;
+    height: 3rem;
+    padding: 0.7rem 0;
     text-align: center;
     color: black;
     font-size: 1.3rem;
