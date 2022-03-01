@@ -47,6 +47,7 @@ nav ul li a {
     color: white;
     background-size: cover;
     height: 40rem;
+    max-height: 700px;
     font-family: var(--font-heading);
     font-size: 1rem;
     font-weight: 700;
@@ -57,8 +58,9 @@ nav ul li a {
     
 }
 #hero .overlay {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 40rem;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,33 +133,42 @@ main h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 1.5rem;
-    overflow: hidden;
     font-family: var(--font-text);
+    font-size: 1rem;
 }
-.about img {
+.about figure {
+    max-height: 23rem;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+}
+.about figure img {
     width: 100%;
-    margin-bottom: 0.6rem;
 }
 .about .text h3 {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     font-family: var(--font-heading);
     color: var(--font-color);
 }
 @media only screen and (min-width: 450px) and (max-width: 899px) {
     .about {
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
-        padding-top: 0;
-        height: 20rem;
+        padding: 0;
+        margin: 2rem 1.5rem 1rem 1.5rem;
+    }
+    .about figure {
+        width: 48%;
+        max-height: 20rem;
+        overflow: hidden;
     }
     .about img {
-        width: 49%;
+        /* height: 100%; */
     }
     .about .text {
-        width: 49%;
+        width: 48%;
     }
-    .about:nth-of-type(2) img {
+    .about:nth-of-type(2) figure {
         order: 1;
     }
 }
@@ -191,13 +202,12 @@ main h1 {
     margin: 0 2rem 1.5rem 2rem;
     overflow: hidden;
     font-family: var(--font-text);
-    text-align: justify;
     width: 100%;
     max-width: 1300px;
 }
 .work p {
     margin-top: 1.4rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 600px;
 }
 .career-button {
@@ -236,7 +246,7 @@ main h1 {
 .skills {
     width: 100%;
 }
-.skills p {
+.skills h3 {
     text-align: center;
     border-bottom: 3px dotted var(--background-color);
     font-family: var(--font-heading);
@@ -403,8 +413,7 @@ main h1 {
 }
 .post p {
     margin: 0.7rem 0;
-    text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: var(--font-text);
 }
 .post img {
