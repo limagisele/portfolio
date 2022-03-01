@@ -208,16 +208,15 @@ main h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 2rem 1.5rem 2rem;
-    overflow: hidden;
+    margin: 1.5rem 2rem 1.5rem 2rem;
     font-family: var(--font-text);
-    width: 100%;
-    max-width: 1300px;
+    width: 90%;
+    max-width: 1400px;
 }
-.work p {
-    margin-top: 1.4rem;
-    font-size: 1rem;
-    max-width: 600px;
+.column p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: 0.5rem;
 }
 .career-button {
     display: flex;
@@ -232,7 +231,7 @@ main h1 {
     font-size: 1rem;
     background-color: white;
     padding: 0.6rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     width: 100%;
 }
@@ -240,14 +239,13 @@ main h1 {
     background-color: var(--focus-color);
     border: 3px solid black;
 }
-.work figure {
+.column figure {
     margin: 1.4rem 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    max-width: 600px;
 }
-.work img {
+.column img {
     margin: auto;
     width: 100%;
     max-width: 500px;
@@ -276,7 +274,7 @@ main h1 {
     font-size: 1.1rem;
     text-align: left;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
     .career-button {
         width: 70%;
         max-width: 1000px;
@@ -288,19 +286,16 @@ main h1 {
     .work {
         align-items: flex-start;
         position: relative;
-        margin: 0 2rem 1.5rem 2rem;
     }
-    .work p {
-        width: 55%;
-        margin-top: 2rem;
+    .column {
+        width: 60%;
     }
-    .work figure {
-        width: 55%;
+    .column figure {
         order: 1;
         margin-bottom: 0;
     }
     .skills {
-        width: 39%;
+        width: 35%;
         position: absolute;
         right: 0;
         top: 1.3rem;
@@ -315,6 +310,46 @@ main h1 {
     }
     .skills ul li {
         font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .career-button {
+        width: 70%;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .career-button a {
+        font-size: 1.3rem;
+    }
+    .work {
+        align-items: flex-start;
+        position: relative;
+    }
+    .work figure {
+        width: 60%;
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .skills {
+        width: 35%;
+        position: absolute;
+        right: 0;
+        top: 1.3rem;
+    }
+
+    .skills p {
+        width: 100%;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+
+    .skills ul {
+        justify-content: space-around;
+    }
+
+    .skills ul li {
+        font-size: 1.5rem;
     }
 }
 
