@@ -248,7 +248,7 @@ main h1 {
 .column img {
     margin: auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
 }
 .skills {
     width: 100%;
@@ -325,29 +325,27 @@ main h1 {
         align-items: flex-start;
         position: relative;
     }
+    .column {
+        width: 68%;
+    }
     .work figure {
-        width: 60%;
         order: 1;
         margin-bottom: 0;
     }
-
     .skills {
-        width: 35%;
+        width: 30%;
         position: absolute;
         right: 0;
         top: 1.3rem;
     }
-
     .skills p {
         width: 100%;
         margin: auto;
         font-size: 1.5rem;
     }
-
     .skills ul {
         justify-content: space-around;
     }
-
     .skills ul li {
         font-size: 1.5rem;
     }
