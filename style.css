@@ -561,6 +561,9 @@ input {
 }
 input[type=submit] {
     color: var(--font-color);
+    background-color: #ddd;
+    padding: 1rem;
+    border: 0.5px solid black;
 }
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .contact {
