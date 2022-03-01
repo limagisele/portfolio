@@ -1,6 +1,5 @@
 /* Global styles */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@
     --focus-color: rgb(249, 211, 217);
 }
 
-/* Navbar styles */
+/* Navbar styles - component with text contect*/
 nav ul {
     display: flex;
     padding: 1.3rem;
@@ -45,6 +44,7 @@ nav ul li a {
     background-color: var(--background-color);
     width: 100%;
 }
+/* Index page graphic component - hero image with overlay */
 #hero {
     text-align: center;
     line-height: 2;
@@ -100,6 +100,7 @@ main {
     flex-wrap: wrap;
     width: 100%;
 }
+/* Main section background and overlay used across multiple pages - graphic component */
 main #background{
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +133,7 @@ main h1 {
 }
 
 /* About page styles */
+/* Creating cards - graphic and text component */
 .about {
     margin: 1rem;
     display: flex;
@@ -207,20 +209,7 @@ main h1 {
 }
 
 /* Work page styles */
-.work {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5rem 2rem 1.5rem 2rem;
-    font-family: var(--font-text);
-    width: 90%;
-    max-width: 1400px;
-}
-.column p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    padding-top: 0.5rem;
-}
+/* Nav buttons - text component */
 .career-button {
     display: flex;
     justify-content: center;
@@ -242,6 +231,21 @@ main h1 {
     background-color: var(--focus-color);
     border: 3px solid black;
 }
+/* Graphic component to the work pages */
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 2rem 1.5rem 2rem;
+    font-family: var(--font-text);
+    width: 90%;
+    max-width: 1400px;
+}
+.column p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: 0.5rem;
+}
 .column figure {
     margin: 1.4rem 0;
     overflow: hidden;
@@ -257,6 +261,7 @@ main h1 {
     border: 1px solid #024028;
     box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
 }
+/* List - text component to the work pages */
 .skills {
     width: 100%;
 }
@@ -336,6 +341,7 @@ main h1 {
 }
 
 /* Work2 page styles */
+/* Adjusting list styles for work2 page */
 #technical {
     width: 100%;
     justify-content: space-around;
@@ -364,6 +370,7 @@ main h1 {
 }
 
 /* Blog page styles */
+/* Cards - graphic and text component */
 .listings-container {
     display: flex;
     flex-wrap: wrap;
@@ -422,6 +429,7 @@ main h1 {
 }
 
 /* Blog posts styles */
+/* Graphic and text component common to all blog posts */
 .post {
     display: flex;
     flex-direction: column;
@@ -513,6 +521,7 @@ main h1 {
 }
 
 /* Contact page styles */
+/* Text component with contact info */
 .contact {
     display: flex;
     flex-direction: column;
@@ -549,6 +558,7 @@ main h1 {
     color: black;
     width: 100%;
 }
+/* Contact form - graphic content */
 form {
     display: flex;
     flex-direction: column;
