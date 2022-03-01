@@ -149,21 +149,18 @@ main h1 {
     font-family: var(--font-heading);
     color: var(--font-color);
 }
-@media only screen and (min-width: 450px) and (max-width: 899px) {
+@media only screen and (min-width: 450px) and (max-width: 1000px) {
     .about {
         flex-wrap: nowrap;
         align-items: flex-start;
         justify-content: space-between;
         padding: 0;
-        margin: 2rem 1.5rem 1rem 1.5rem;
+        margin: 2rem;
     }
     .about figure {
         width: 48%;
-        max-height: 20rem;
+        max-height: 22rem;
         overflow: hidden;
-    }
-    .about img {
-        /* height: 100%; */
     }
     .about .text {
         width: 48%;
@@ -172,21 +169,29 @@ main h1 {
         order: 1;
     }
 }
-@media only screen and (min-width: 900px) {
-    .about {
+@media only screen and (min-width: 1001px) {
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 0;
-        width: calc(100%/2 - 2rem);
-        height: 14rem;
+        margin: 1rem;
+        max-width: 1400px;
     }
-    .about img {
-        width: 47%;
+    .about {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0;
+        width: 45%;
+    }
+    .about figure {
+        width: 49%;
+        max-height: 20rem;
+        overflow: hidden;
     }
     .about .text {
-       width: 47%;
-       margin: 0.5rem;       
+        width: 49%;
     }
-    .about:nth-of-type(2) img {
+    .about:nth-of-type(2) figure {
         order: 1;
     }
     .about:nth-of-type(3) {
