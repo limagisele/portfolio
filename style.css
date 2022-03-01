@@ -40,6 +40,11 @@ nav ul li a {
 }
 
 /* Index page styles */
+#background-border {
+    padding: 1rem;
+    background-color: var(--background-color);
+    width: 100%;
+}
 #hero {
     text-align: center;
     line-height: 2;
@@ -141,12 +146,12 @@ main h1 {
     line-height: 1.5;
 }
 .about figure {
-    max-height: 23rem;
-    overflow: hidden;
     margin-bottom: 0.8rem;
 }
 .about figure img {
     width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
 }
 .about .text h3 {
     padding-bottom: 0.5rem;
@@ -163,8 +168,6 @@ main h1 {
     }
     .about figure {
         width: 48%;
-        max-height: 22rem;
-        overflow: hidden;
     }
     .about .text {
         width: 48%;
@@ -245,10 +248,14 @@ main h1 {
     display: flex;
     justify-content: center;
 }
-.column img {
+.column figure img {
     margin: auto;
-    width: 100%;
+    width: 90%;
     max-width: 700px;
+    border-radius: 10px;
+    padding: 1px;
+    border: 1px solid #024028;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
 }
 .skills {
     width: 100%;
@@ -439,11 +446,12 @@ main h1 {
 }
 .post p {
     margin: 0.7rem 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: var(--font-text);
 }
 .post img {
     width: 95%;
+    box-shadow: 0.5rem 0.5rem rgba(246, 137, 137, 0.931), -0.5rem -0.5rem #ccc;
 }
 .post .blog-button {
     text-decoration: none;
@@ -497,7 +505,7 @@ main h1 {
         top: 75px;
         overflow: hidden;
         max-height: 340px;
-        max-width:400px;
+        max-width: 400px;
     }
     #post-footer {
         margin-top: 1rem;
