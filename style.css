@@ -312,7 +312,6 @@ main h1 {
     }
     .work {
         align-items: flex-start;
-        /* position: relative; */
     }
     .column {
         width: 60%;
@@ -377,9 +376,6 @@ main h1 {
     }
 }
 @media only screen and (min-width: 1201px) {
-    /* .skills {
-        top: 0;
-    } */
     #technical li {
         font-size: 3.5rem;
     }
@@ -659,6 +655,7 @@ footer {
     width: 100%;
     bottom: 0;
     background-color: white;
+    z-index: 2;
 }
 footer p {
     width: 100%;
