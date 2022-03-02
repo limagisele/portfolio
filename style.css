@@ -9,11 +9,18 @@
     --font-color: rgb(3, 98, 51);
     --font-heading: "Ubuntu Mono", monospace;
     --font-text: "Lora", serif;
-    --background-color: rgba(8, 133, 77, 0.287);
+    --background-color: rgb(161, 216, 186);
     --focus-color: rgb(249, 211, 217);
 }
 
 /* Navbar styles - component with text contect*/
+header {
+    height: 3.6rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
 nav ul {
     display: flex;
     padding: 1.3rem;
@@ -125,6 +132,9 @@ main h1 {
     color: black;
     width: 100%;
     margin-bottom: 1rem;
+    position: sticky;
+    top: 3.5rem;
+    z-index: 2;
 }
 @media only screen and (min-width: 900px) {
     main h1 {
@@ -133,7 +143,7 @@ main h1 {
 }
 
 /* About page styles */
-/* Creating cards - graphic and text component */
+/* Cards - graphic and text component */
 .about {
     margin: 1rem;
     display: flex;
@@ -214,6 +224,9 @@ main h1 {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 5rem;
+    position: sticky;
+    top: 6.5rem;
 }
 .career-button a {
     text-decoration: none;
@@ -223,7 +236,7 @@ main h1 {
     font-size: 1rem;
     background-color: white;
     padding: 0.6rem 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     text-align: center;
     width: 100%;
 }
@@ -261,7 +274,7 @@ main h1 {
     border: 1px solid #024028;
     box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
 }
-/* List - text component to the work pages */
+/* List - textual component to the work pages */
 .skills {
     width: 100%;
 }
@@ -288,16 +301,18 @@ main h1 {
 }
 @media only screen and (min-width: 700px) {
     .career-button {
-        width: 70%;
-        max-width: 1000px;
+        width: 100%;
         margin: auto;
+        z-index: 2;
     }
     .career-button a {
         font-size: 1.3rem;
+        width: 25%;
+        max-width: 15rem;
     }
     .work {
         align-items: flex-start;
-        position: relative;
+        /* position: relative; */
     }
     .column {
         width: 60%;
@@ -310,7 +325,8 @@ main h1 {
         width: 35%;
         position: absolute;
         right: 0;
-        top: 1.3rem;
+        top: 14rem;
+        z-index: 1;
     }
     .skills h3 {
         width: 80%;
@@ -361,9 +377,9 @@ main h1 {
     }
 }
 @media only screen and (min-width: 1201px) {
-    .skills {
+    /* .skills {
         top: 0;
-    }
+    } */
     #technical li {
         font-size: 3.5rem;
     }
@@ -465,6 +481,7 @@ main h1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: transparent;
 }
 .post .blog-button {
     text-decoration: none;
@@ -638,6 +655,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
 }
 footer p {
     width: 100%;
@@ -645,7 +666,7 @@ footer p {
     padding: 0.7rem 0;
     text-align: center;
     color: black;
-    font-family: var(--font-text);
+    font-family: var(--font-heading);
     font-size: 1.1rem;
     background-color: var(--background-color);
 }
