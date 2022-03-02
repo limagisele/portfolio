@@ -65,5 +65,5 @@ ___
 ##### Blog Post pages
 * Buttons added to link to previous and next posts for a more convenient transition between posts for the user
 ##### Contact page
-* Form added as another option of contact for the user
+* Form added as an adittional option of contact for the user
 * Animation included to encourage the user to initiate a first contact after seeing my website
