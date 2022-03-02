@@ -48,10 +48,10 @@ ___
 * Background image with overlay effect
 * Footer social media and email links with hovering effect  
   Positioned always visible at bottom of the page for an easier access to links and to bring attention to the user.
-* Consistent design, sharing a common theme, across all pages, including html semantics, fonts, colours and language.
+* Consistent design, sharing a common theme, across all pages, including html semantics, fonts, colours and language
 ##### Index / Home page
 * Hero image with overlay effect
-* Animated button on hero image utilising `keyframes` bring attention to the user to go first to the About page.
+* Animated button on hero image utilising `keyframes` bring attention to the user to go first to the About page
 ##### About page
 * Cards with image and text ilustrating separate topics  
   Flexbox utilised to create a design responsive in three different screen sizes
@@ -60,7 +60,10 @@ ___
 * Containers with text and image  
   Used flexbox and layout concepts to create two different designs adjustable to defined screen sizes.
 ##### Blog page
-* Cards utilised to list all blog posts and their publishing dates  
-  Three layouts implemented via flexbox to accomodate image sizes on distinct screen sizes
+* Cards utilised to list all blog posts in a graphic way with their publishing dates  
+  Three layouts implemented via flexbox to accomodate image sizes on distinct screen sizes.
 ##### Blog Post pages
+* Buttons added to link to previous and next posts for a more convenient transition between posts for the user
 ##### Contact page
+* Form added as another option of contact for the user
+* Animation included to encourage the user to initiate a first contact after seeing my website
