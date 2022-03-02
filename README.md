@@ -24,3 +24,25 @@ ___
 Potential employers and recruiters willing to engage with a developer and/or a professional in tech who has recently completed a bootcamp.
 
 It is assumed here that those employers/recruiters have technical knowledge relating to IT, software development, programming languages and development stacks. Combined with high expectations of professionalism and positive work ethic.
+
+#### Tech Stack
+___
+This portfolio was built using my skills on:
+* HMTL5
+  * Accessibility
+* CSS3
+  * Flexbox
+* Git / GitHub
+* Deployment (Netlify)
+* Responsive design (Mobile First)
+
+#### Sitemap
+___
+![sitemap](docs/sitemap.png)
+
+#### Functionality / Features
+___
+
+
+#### Screenshots
+---
