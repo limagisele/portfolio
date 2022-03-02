@@ -32,6 +32,7 @@ This portfolio was built using my skills on:
   * Accessibility
 * CSS3
   * Flexbox
+  * Effects & Animation
 * Git / GitHub
 * Deployment (Netlify)
 * Responsive design (Mobile First)
