@@ -1,0 +1,742 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-color: rgb(3, 98, 51);
+    --font-heading: "Ubuntu Mono", monospace;
+    --font-text: "Lora", serif;
+    --background-color: rgb(161, 216, 186);
+    --focus-color: rgb(249, 211, 217);
+}
+
+/* Navbar styles - component with text contect*/
+header {
+    height: 3.6rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1.3rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: var(--font-text);
+    font-size: 0.8rem;
+    height: 100%;
+}
+nav ul li a:hover {
+    color: black;
+    text-transform: uppercase;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    nav ul {
+        justify-content: space-around;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 900px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+    nav ul li {
+        padding: 0 1.6rem;
+    }
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Index page styles */
+#background-border {
+    padding: 1rem;
+    background-color: var(--background-color);
+    width: 100%;
+    position: sticky;
+    top: 3.5rem;
+}
+/* Index page graphic component - hero image with overlay */
+#hero {
+    text-align: center;
+    line-height: 2;
+    background-image: url("images/cactus.jpg");
+    color: white;
+    background-size: cover;
+    height: 40rem;
+    max-height: 700px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+}
+#hero h2 {
+    font-size: 1.1rem;
+    margin: 1rem;
+    
+}
+#hero .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 40rem;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+#hero .button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 0.3rem;
+    width: 25vw;
+    max-width: 120px;
+    margin: 2rem auto;
+    font-family: var(--font-text);
+}
+@media only screen and (min-width: 450px) {
+    #hero,
+    #hero .overlay {
+        height: 50rem;
+    }
+    #hero h1{
+        font-size: 2rem;
+    }
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+    #hero .button {
+        animation: flashing 3s infinite;
+    }
+    @keyframes flashing {
+        50% {
+            transform: scale(1.1, 1.1);
+        }
+    }
+    #hero .button:hover {
+        color: var(--font-color);
+        background-color: white;
+
+    }
+}
+
+/* Main section styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* Main section background and overlay used across multiple pages - graphic component */
+main #background{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    width: 100%;
+}
+main #overlay {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    justify-content: center;
+}
+main h1 {
+    font-family: var(--font-heading);
+    color: var(--font-color);
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--background-color);
+    color: black;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 3.5rem;
+    z-index: 2;
+}
+@media only screen and (min-width: 900px) {
+    main h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* About page styles */
+/* Cards - graphic and text component */
+.about {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    font-family: var(--font-text);
+    font-size: 1rem;
+}
+.about p {
+    padding-top: 0.5rem;
+    line-height: 1.5;
+}
+.about figure {
+    margin-bottom: 0.8rem;
+}
+.about figure img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+}
+.about .text h3 {
+    padding-bottom: 0.5rem;
+    font-family: var(--font-heading);
+    color: var(--font-color);
+}
+@media only screen and (min-width: 450px) and (max-width: 1000px) {
+    .about {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0;
+        margin: 2rem;
+    }
+    .about figure {
+        width: 48%;
+    }
+    .about .text {
+        width: 48%;
+    }
+    .about:nth-of-type(2) figure {
+        order: 1;
+    }
+}
+@media only screen and (min-width: 1001px) {
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 1rem;
+        max-width: 1400px;
+    }
+    .about {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0;
+        width: 45%;
+    }
+    .about figure {
+        width: 49%;
+        max-height: 20rem;
+        overflow: hidden;
+    }
+    .about .text {
+        width: 49%;
+    }
+    .about:nth-of-type(2) figure {
+        order: 1;
+    }
+    .about:nth-of-type(3) {
+        margin: 1rem auto 1rem auto;
+    }
+}
+
+/* Work page styles */
+/* Nav buttons - text component */
+.career-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    position: sticky;
+    top: 6.5rem;
+}
+.career-button a {
+    text-decoration: none;
+    font-family: var(--font-heading);
+    color: black;
+    border: 1px solid black;
+    font-size: 1rem;
+    background-color: white;
+    padding: 0.6rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.career-button a:hover {
+    box-shadow: 0 0 10px 1px;
+}
+.career-button a:active {
+    box-shadow: 0 0 10px 1px;
+    color: var(--focus-color);
+}
+#current-button {
+    background-color: var(--focus-color);
+    border: 3px solid rgba(0, 0, 0, 0.849);
+    pointer-events: none;
+}
+/* Graphic component to the work pages */
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 2rem 1.5rem 2rem;
+    font-family: var(--font-text);
+    width: 90%;
+    max-width: 1400px;
+}
+.column p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: 0.5rem;
+}
+.column figure {
+    margin: 1.4rem 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.column figure img {
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    padding: 1px;
+    border: 1px solid #024028;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
+}
+/* List - textual component to the work pages */
+.skills {
+    width: 100%;
+}
+.skills h3 {
+    text-align: center;
+    border-bottom: 3px dotted var(--background-color);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--font-color);
+}
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+.skills ul li {
+    list-style-type: none;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    width: 20rem;
+    font-size: 1.1rem;
+    text-align: left;
+}
+@media only screen and (min-width: 700px) {
+    .career-button {
+        width: 100%;
+        margin: auto;
+        z-index: 2;
+    }
+    .career-button a {
+        font-size: 1.3rem;
+        width: 25%;
+        max-width: 15rem;
+    }
+    .work {
+        align-items: flex-start;
+    }
+    .column {
+        width: 60%;
+    }
+    .column figure {
+        order: 1;
+        margin-bottom: 0;
+    }
+    .skills {
+        width: 35%;
+        position: absolute;
+        right: 0;
+        top: 14rem;
+        z-index: 1;
+    }
+    .skills h3 {
+        width: 80%;
+        margin: auto;
+        font-size: 1.7rem;
+    }
+    .skills ul {
+        justify-content:space-around;
+    }
+    .skills ul li {
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .column {
+        width: 68%;
+    }
+    .skills {
+        width: 30%;
+    }
+    .skills h3 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .skills ul li {
+        font-size: 1.5rem;
+    }
+}
+
+/* Work2 page styles */
+/* Adjusting list styles for work2 page */
+#technical {
+    width: 100%;
+    justify-content: space-around;
+}
+#technical li {
+    margin: 0.5rem 1.3rem;
+    text-align: center;
+    width: 14%;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2.7rem;
+    padding: 0;
+}
+@media only screen and (min-width: 700px) {
+    #technical li {
+        width: 100%;
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    #technical li {
+        font-size: 3.5rem;
+    }
+}
+
+/* Blog page styles */
+/* Cards - graphic and textual component */
+.listings-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+}
+.listing {
+    display: flex;
+    flex-direction: column;
+    max-height: 70vw;
+    width: 70vw;
+    overflow: hidden;
+    margin: 1rem auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+    max-height: 300px;
+    border: 2px solid var(--focus-color);
+    background-color: white;
+}
+.listing:hover {
+    box-shadow: 0 0 20px 10px rgba(92, 70, 81, 0.335);
+}
+.listing h2 {
+    width: 100%;
+    font-size: 0.9rem;
+    padding-top: 0.6rem;
+    margin-left: 0.5rem;
+}
+.listing h2 a {
+    font-family: var(--font-heading);
+    color: black;
+    text-decoration: none;
+}
+.listing h2 a:active {
+    color: var(--font-color);
+}
+.listing time {
+    font-family: var(--font-text);
+    font-size: 0.7rem;
+    margin-left: auto;
+    padding: 0.3rem;
+}
+.listing img {
+    border-top: 1px solid black;
+    width: 100%;
+}
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .listing {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40%;
+        height: 40vw;
+    }
+}
+@media only screen and (min-width: 801px) {
+    .listing {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: calc(100%/4 - 2rem);
+        margin: 3rem;
+    }
+}
+
+/* Blog posts styles */
+/* Graphic and text component common to all blog posts */
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+}
+.post h2 {
+    font-family: var(--font-heading);
+    color: var(--font-color);
+}
+.post time {
+    margin-top: 0.9rem;
+    text-align: right;
+    font-family: var(--font-text);
+    font-size: 0.8rem;
+    border-bottom: 2px dotted var(--background-color);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+.post p {
+    margin: 0.7rem 0;
+    font-size: 1.1rem;
+    font-family: var(--font-text);
+}
+.post img {
+    width: 95%;
+    box-shadow: 0.5rem 0.5rem rgba(246, 137, 137, 0.931), -0.5rem -0.5rem #ccc;
+}
+#post-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+}
+#post-footer a:hover {
+    box-shadow: 0 0 5px 1px var(--background-color);
+}
+#post-footer a:active {
+   background-color: #ddd;
+   color: black;
+   border: 1px solid black;
+}
+.post .blog-button {
+    text-decoration: none;
+    font-family: var(--font-text);
+    color: var(--font-color);
+    border: 1px solid var(--background-color);
+    padding: 0.5rem;
+    width: 9rem;
+    text-align: center;
+    background-color: white;
+}
+@media only screen and (min-width: 500px) and (max-width: 799px){
+    .post {
+        margin: 1rem 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .post p:nth-of-type(1) {
+        width: 50%;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .post img {
+        width: 50%;
+        margin-top: 0.7rem;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .post {
+        flex-direction: column;
+        margin: 1rem 4rem;
+        position: relative;
+        align-items: flex-start;
+    }
+    .post p {
+        width: 55%;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .post img {
+        width: 40%;
+        margin-top: 0.7rem;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        overflow: hidden;
+        max-height: 340px;
+        max-width: 400px;
+    }
+    #post-footer {
+        margin-top: 1rem;
+    }
+}
+
+/* Contact page styles */
+/* Textual component with contact info */
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+}
+.intro h2 {
+    font-family: var(--font-heading);
+    color: var(--font-color);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: attention 3s;
+}
+@keyframes attention {
+    50% {
+        font-size: 1.2rem;
+    }
+}
+.intro h3 {
+    font-family: var(--font-heading);
+    border: 1px solid var(--focus-color);
+    background-color: var(--focus-color);
+    text-align: center;
+    padding: 0.6rem 0;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-family: var(--font-text);
+}
+.details p, 
+.details a {
+    padding: 0.5rem;
+    color: black;
+    width: 100%;
+}
+.details a:hover {
+    font-size: 1.1rem;
+    color: var(--font-color);
+}
+/* Contact form - graphic content */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: var(--font-text);
+    color: var(--font-color);
+}
+input {
+    padding: 10px;
+    font-family: var(--font-text);
+}
+input[type=submit] {
+    color: var(--font-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #ddd;
+    padding: 1rem;
+    border: 0.5px solid black;
+}
+input[type=submit]:hover {
+    background-color: white;
+    
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .intro h2 {
+        order: 1;
+        margin: 1rem 0;
+    }
+    form {
+        order: 1;
+        width: 90%;
+    }
+    input[type=submit] {
+        width: 10rem;
+        margin-left: auto;
+    }
+}
+@media only screen and (min-width: 901px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        margin: 2rem 4rem;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .intro h2 {
+        order: 1;
+        margin: 1rem 0;
+    }
+    .details {
+        order: 1;
+        position: absolute;
+        left: 6rem;
+        top: 6rem;
+    }
+    form {
+        width: 49%;
+    }
+    input[type=submit] {
+        width: 10rem;
+        margin-left: auto;
+    }
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    z-index: 2;
+}
+footer p {
+    width: 100%;
+    height: 3rem;
+    padding: 0.7rem 0;
+    text-align: center;
+    color: black;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    background-color: var(--background-color);
+}
+.social-button {
+    margin: 0.5rem 1.6rem;
+    font-size: 2.5rem;
+    color: var(--font-color);
+}
+.social-button:hover {
+    transform: scale(1.2, 1.2);
+    color: black;
+}
