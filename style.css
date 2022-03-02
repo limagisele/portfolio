@@ -461,6 +461,11 @@ main h1 {
     width: 95%;
     box-shadow: 0.5rem 0.5rem rgba(246, 137, 137, 0.931), -0.5rem -0.5rem #ccc;
 }
+#post-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .post .blog-button {
     text-decoration: none;
     font-family: var(--font-text);
@@ -470,11 +475,6 @@ main h1 {
     width: 9rem;
     text-align: center;
     background-color: white;
-}
-#post-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 @media only screen and (min-width: 500px) and (max-width: 799px){
     .post {
@@ -568,9 +568,12 @@ form {
 }
 input {
     padding: 10px;
+    font-family: var(--font-text);
 }
 input[type=submit] {
     color: var(--font-color);
+    font-size: 0.9rem;
+    font-weight: bold;
     background-color: #ddd;
     padding: 1rem;
     border: 0.5px solid black;
@@ -642,7 +645,8 @@ footer p {
     padding: 0.7rem 0;
     text-align: center;
     color: black;
-    font-size: 1.3rem;
+    font-family: var(--font-text);
+    font-size: 1.1rem;
     background-color: var(--background-color);
 }
 .social-button {
