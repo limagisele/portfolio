@@ -52,7 +52,7 @@ ___
 * Background image with overlay effect
 * Pseudo-classes used to create effects on cards, links and buttons
 ##### Index / Home page
-* Hero banner with overlay effect calling for action through animated button on utilising `keyframes` for attention of the user
+* Hero banner with overlay effect calling for action through animated button for attention of the user
 ##### About page
 * Made of 3 containers with image and text illustrating separate personal topics  
 ##### Work & Work2 pages
