@@ -5,7 +5,7 @@ ___
 This project has the purpose to plan, develop and deploy a personal online portfolio as part of the Term 1 assignment of the Coder Academy Accelerated Bootcamp.
 
 [Explore here the related GitHub repo](https://github.com/limagisele/portfolio)  
-[And here the published portfolio website](https://confident-swirles-9bfa2e.netlify.app)  
+[And here the published portfolio website](https://giselelima.netlify.app/)  
 
 ##### Table of Contents
 1. Purpose
@@ -54,16 +54,16 @@ ___
 ##### Index / Home page
 * Hero banner with overlay effect calling for action through animated button on utilising `keyframes` for attention of the user
 ##### About page
-* Made of 3 containers with image and text ilustrating separate personal topics  
+* Made of 3 containers with image and text illustrating separate personal topics  
 ##### Work & Work2 pages
-* Those to pages were created to present the skills and background of my previous career as a Production Engineer and my current path of becoming a Web Developer. 
-* Additional nav butttons linking the two career related pages and a resume file for download in pdf format
+* The two pages were created to present the skills and background of my previous career as a Production Engineer and my current path of becoming a Web Developer. 
+* Additional nav buttons linking the two career related pages and a resume file for download in pdf format
 ##### Blog page
 * Cards utilised to list all blog posts in a graphic way, including their publishing dates
 ##### Blog Post pages
 * Buttons added as footer of the blog posts to link to previous and next posts for a more convenient transition for the user
 ##### Contact page
-* Form added as an adittional option of contact
+* Form added as an additional option of contact
 * Animation included to encourage the user to initiate a first contact after seeing my website
 
 #### 6. Screenshots
