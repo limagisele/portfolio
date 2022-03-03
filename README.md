@@ -68,3 +68,15 @@ ___
 
 #### 6. Screenshots
 ---
+##### Home
+![Home page](docs/home.png)
+##### About
+![About page](docs/about.png)
+##### Work
+![Work page](docs/work.png)
+##### Blog
+![Blog page](docs/blog.png)
+##### Blog Post
+![Blog post page](docs/blog-post.png)
+##### Contact
+![Contact page](docs/contact.png)
