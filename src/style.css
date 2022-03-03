@@ -13,7 +13,7 @@
     --focus-color: rgb(249, 211, 217);
 }
 
-/* Navbar styles - component with text contect*/
+/* Navbar styles */
 header {
     height: 3.6rem;
     background-color: white;
@@ -247,7 +247,7 @@ main h1 {
 }
 
 /* Work page styles */
-/* Nav buttons - text component */
+/* Nav buttons to link work related pages */
 .career-button {
     display: flex;
     justify-content: center;
@@ -280,7 +280,7 @@ main h1 {
     border: 3px solid rgba(0, 0, 0, 0.849);
     pointer-events: none;
 }
-/* Graphic component to the work pages */
+/* Graphic and textual component for both work pages */
 .work {
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@ main h1 {
     border: 1px solid #024028;
     box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
 }
-/* List - textual component to the work pages */
+/* List container - textual component for both work pages */
 .skills {
     width: 100%;
 }
@@ -483,7 +483,7 @@ main h1 {
 }
 
 /* Blog posts styles */
-/* Graphic and text component common to all blog posts */
+/* Graphic and textual component common to all blog posts */
 .post {
     display: flex;
     flex-direction: column;
@@ -631,7 +631,7 @@ main h1 {
     font-size: 1.1rem;
     color: var(--font-color);
 }
-/* Contact form - graphic content */
+/* Contact form component */
 form {
     display: flex;
     flex-direction: column;
