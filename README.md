@@ -15,17 +15,17 @@ This project has the purpose to plan, develop and deploy a personal online portf
 5. Functionality / Features
 6. Screenshots
 
-#### Purpose
+#### 1. Purpose
 ---
 My portfolio website provides a showcase of my work as a web developer, which contains 11 HTML and 1 CSS files. Additionally, it includes as well some information about me, my personal interests and drives, previous career and the transferrable skills I bring along into my new career as a developer. 
 
-#### Target Audience
+#### 2. Target Audience
 ___
 Potential employers and recruiters willing to engage with a developer and/or a professional in tech who has recently completed a bootcamp.
 
 It is assumed here that those employers/recruiters have technical knowledge relating to IT, software development, programming languages and development stacks. Combined with high expectations of professionalism and positive work ethic.
 
-#### Tech Stack
+#### 3. Tech Stack
 ___
 This portfolio was built using my skills on:
 * HMTL5
@@ -37,33 +37,34 @@ This portfolio was built using my skills on:
 * Deployment (Netlify)
 * Responsive design (Mobile First)
 
-#### Sitemap
+#### 4. Sitemap
 ___
 ![sitemap](docs/sitemap.png)
 
-#### Functionality / Features
+#### 5. Functionality / Features
 ___
 ##### Global styling
-* Responsive navbar and always visible during scrolling
-* Background image with overlay effect
-* Footer social media and email links with hovering effect  
-  Positioned always visible at bottom of the page for an easier access to links and to bring attention to the user.
 * Consistent design, sharing a common theme, across all pages, including html semantics, fonts, colours and language
+* Responsive navbar and always visible on screen
+* Footer with social media and email links  
+  Positioned always visible at bottom of the page for an easier access to links and to bring attention to the user.
+* Flexbox utilised to create a design responsive in three different screen sizes
+* Background image with overlay effect
+* Pseudo-classes used to create effects on cards, links and buttons
 ##### Index / Home page
-* Hero image with overlay effect
-* Animated button on hero image utilising `keyframes` bring attention to the user to go first to the About page
+* Hero banner with overlay effect calling for action through animated button on utilising `keyframes` for attention of the user
 ##### About page
-* Cards with image and text ilustrating separate topics  
-  Flexbox utilised to create a design responsive in three different screen sizes
+* Made of 3 containers with image and text ilustrating separate personal topics  
 ##### Work & Work2 pages
-* Extra nav butttons linking the two career related pages and a resume file for download in pdf format  
-* Containers with text and image  
-  Used flexbox and layout concepts to create two different designs adjustable to defined screen sizes.
+* Those to pages were created to present the skills and background of my previous career as a Production Engineer and my current path of becoming a Web Developer. 
+* Additional nav butttons linking the two career related pages and a resume file for download in pdf format
 ##### Blog page
-* Cards utilised to list all blog posts in a graphic way with their publishing dates  
-  Three layouts implemented via flexbox to accomodate image sizes on distinct screen sizes.
+* Cards utilised to list all blog posts in a graphic way, including their publishing dates
 ##### Blog Post pages
-* Buttons added to link to previous and next posts for a more convenient transition between posts for the user
+* Buttons added as footer of the blog posts to link to previous and next posts for a more convenient transition for the user
 ##### Contact page
-* Form added as an adittional option of contact for the user
+* Form added as an adittional option of contact
 * Animation included to encourage the user to initiate a first contact after seeing my website
+
+#### 6. Screenshots
+---
