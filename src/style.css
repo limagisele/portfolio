@@ -534,10 +534,11 @@ main h1 {
     font-family: var(--font-text);
     color: var(--font-color);
     border: 1px solid var(--background-color);
-    padding: 0.5rem;
-    width: 9rem;
+    padding: 0.4rem;
+    width: 6.5rem;
     text-align: center;
     background-color: white;
+    font-size: 0.7rem;
 }
 @media only screen and (min-width: 500px) and (max-width: 799px){
     .post {
