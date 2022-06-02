@@ -114,9 +114,6 @@ nav ul li a:hover {
     #hero h1{
         font-size: 2rem;
     }
-    #hero h2 {
-        font-size: 1.5rem;
-    }
     #hero .button {
         animation: flashing 3s infinite;
     }
@@ -155,26 +152,21 @@ main #overlay {
     width: 100%;
     justify-content: center;
 }
-@media only screen and (min-width: 900px) {
-    main h1 {
-        font-size: 1.5rem;
-    }
-}
 
 /* About page styles */
 /* Cards - graphic and text component */
 .about {
-    margin: 2rem 1rem;
+    margin: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 1.5rem;
     font-family: var(--font-text);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .about p {
     padding-top: 0.5rem;
-    line-height: 2;
+    line-height: 1.5;
 }
 .about figure {
     margin-bottom: 0.8rem;
@@ -189,13 +181,12 @@ main #overlay {
     font-family: var(--font-heading);
     color: var(--font-color);
 }
-@media only screen and (min-width: 450px) and (max-width: 1000px) {
+@media only screen and (min-width: 550px) {
     .about {
         flex-wrap: nowrap;
         align-items: flex-start;
         justify-content: space-between;
         padding: 0;
-        margin: 2rem;
     }
     .about figure {
         width: 48%;
@@ -207,33 +198,21 @@ main #overlay {
         order: 1;
     }
 }
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 990px) {
     .about-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 1rem;
-        max-width: 1400px;
+        max-width: 1100px;
     }
     .about {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        padding: 0;
-        width: 45%;
-    }
-    .about figure {
-        width: 49%;
-        max-height: 20rem;
-        overflow: hidden;
-    }
-    .about .text {
-        width: 49%;
-    }
-    .about:nth-of-type(2) figure {
-        order: 1;
+        width: 40%;
     }
     .about:nth-of-type(3) {
-        margin: 1rem auto 1rem auto;
+        margin: 1rem auto;
+        width: 65%;
+    }
+    .about:nth-of-type(3) img {
+        max-width: 250px;
     }
 }
 
@@ -282,8 +261,7 @@ main #overlay {
 .column p {
     font-size: 1rem;
     line-height: 1.5;
-    padding-top: 0.5rem;
-    line-height: 2.5rem;
+    margin-top: 1rem;
 }
 .column figure {
     margin: 1.4rem 0;
@@ -405,7 +383,7 @@ main #overlay {
 }
 .listing h2 {
     width: 90%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin: 0.8rem;
 }
@@ -469,7 +447,7 @@ main #overlay {
 }
 .post p {
     margin: 0.7rem 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: var(--font-text);
     line-height: 1.5;
 }
@@ -554,7 +532,7 @@ main #overlay {
 .intro h2 {
     font-family: var(--font-heading);
     color: var(--font-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-bottom: 1rem;
     animation: slide 3s;
@@ -576,9 +554,9 @@ main #overlay {
     color: black;
     width: 100%;
     line-height: 3;
+    font-size: 1.1rem;
 }
 .details a:hover {
-    font-size: 1.1rem;
     color: var(--font-color);
 }
 /* Contact form component */
