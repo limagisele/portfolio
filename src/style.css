@@ -354,6 +354,7 @@ main #overlay {
     .skills h3 {
         width: 80%;
         margin: auto;
+        font-size: 1.5rem;
     }
     .skills ul {
         justify-content:space-around;
@@ -385,8 +386,7 @@ main #overlay {
 .listings-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     justify-content: space-evenly;
 }
 .listing {
@@ -417,6 +417,12 @@ main #overlay {
 .listing h2 a:active {
     color: var(--font-color);
 }
+.listing aside {
+    font-family: var(--font-text);
+    width: 90%;
+    font-size: 1rem;
+    margin-left: 0.8rem;
+}
 .listing time {
     font-family: var(--font-text);
     font-size: 0.7rem;
@@ -428,16 +434,11 @@ main #overlay {
     width: 100%;
     flex-grow: 2;
 }
-@media only screen and (min-width: 600px) and (max-width: 999px) {
+@media only screen and (min-width: 700px) {
     .listing {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 35%;
-    }
-}
-@media only screen and (min-width: 1000px) {
-    .listing {
-        width: calc(100%/4 - 1rem);
+        width: 40%;
     }
 }
 
@@ -447,21 +448,22 @@ main #overlay {
     display: flex;
     flex-direction: column;
     margin: 1rem 2rem;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
 }
 .post h2 {
-    font-family: var(--font-heading);
+    font-family: var(--font-text);
     color: var(--font-color);
+    margin-top: 2rem;
 }
 .post time {
     margin-top: 0.9rem;
     text-align: right;
     font-family: var(--font-text);
     font-size: 0.8rem;
-    border-bottom: 2px dotted var(--background-color);
+    border-bottom: 2px dotted var(--background-color2);
     padding-bottom: 0.5rem;
     width: 100%;
 }
@@ -469,16 +471,19 @@ main #overlay {
     margin: 0.7rem 0;
     font-size: 1.1rem;
     font-family: var(--font-text);
+    line-height: 1.5;
 }
 .post img {
     width: 95%;
-    box-shadow: 0.5rem 0.5rem rgba(246, 137, 137, 0.931), -0.5rem -0.5rem #ccc;
+    margin: 2rem auto;
+    box-shadow: 0.5rem 0.5rem var(--font-color), -0.5rem -0.5rem var(--background-color2);
 }
 #post-footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: transparent;
+    margin-top: 2rem;
 }
 #post-footer a:hover {
     box-shadow: 0 0 5px 1px var(--background-color);
@@ -491,55 +496,30 @@ main #overlay {
 .post .blog-button {
     text-decoration: none;
     font-family: var(--font-text);
-    color: var(--font-color);
-    border: 1px solid var(--background-color);
-    padding: 0.4rem;
-    width: 6.5rem;
+    color: var(--background-color);
+    border: 1px solid var(--background-color2);
+    padding: 0.6rem 0;
+    width: 8rem;
     text-align: center;
     background-color: white;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
-@media only screen and (min-width: 500px) and (max-width: 799px){
+@media only screen and (min-width: 650px) {
     .post {
-        margin: 1rem 2rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-end;
+        margin: 1rem 3rem;
+        max-width: 1100px;
+        display: block;
     }
-    .post p:nth-of-type(1) {
-        width: 50%;
-        padding-right: 1.5rem;
-        margin-bottom: 0;
-    }
-    .post img {
-        width: 50%;
-        margin-top: 0.7rem;
-    }
-}
-@media only screen and (min-width: 800px) {
-    .post {
-        flex-direction: column;
-        margin: 1rem 4rem;
-        position: relative;
-        align-items: flex-start;
+    time {
+        display: block;
     }
     .post p {
-        width: 55%;
-        padding-right: 1.5rem;
-        margin-bottom: 0;
+        margin-top: 2rem;
     }
     .post img {
-        width: 40%;
-        margin-top: 0.7rem;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        overflow: hidden;
-        max-height: 340px;
-        max-width: 400px;
-    }
-    #post-footer {
-        margin-top: 1rem;
+        max-width: 500px;
+        float: right;
+        margin: 3rem 1.5rem;
     }
 }
 
@@ -581,8 +561,6 @@ main #overlay {
 }
 .intro h3 {
     font-family: var(--font-heading);
-    border: 1px solid var(--focus-color);
-    background-color: var(--focus-color);
     text-align: center;
     padding: 0.6rem 0;
 }
@@ -595,9 +573,9 @@ main #overlay {
 }
 .details p, 
 .details a {
-    padding: 0.5rem;
     color: black;
     width: 100%;
+    line-height: 3;
 }
 .details a:hover {
     font-size: 1.1rem;
@@ -631,6 +609,7 @@ input[type=submit]:hover {
     .contact {
         flex-direction: row;
         justify-content: space-evenly;
+        max-width: 900px;
     }
     .intro {
         display: flex;
@@ -650,7 +629,7 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 901px) {
     form {
-        width: 50%;
+        width: 60vw;
     }
 }
 
@@ -667,8 +646,7 @@ footer {
 }
 footer p {
     width: 100%;
-    height: 3rem;
-    padding: 0.7rem 0;
+    height: 2rem;
     text-align: center;
     color: var(--font-color);
     font-family: var(--font-heading);
