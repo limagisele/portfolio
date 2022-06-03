@@ -163,6 +163,7 @@ main #overlay {
     padding-bottom: 1.5rem;
     font-family: var(--font-text);
     font-size: 1.1rem;
+    cursor: pointer;
 }
 .about p {
     padding-top: 0.5rem;
@@ -175,11 +176,23 @@ main #overlay {
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+    filter: grayscale(100%);
 }
 .about .text h3 {
     padding-bottom: 0.5rem;
     font-family: var(--font-heading);
     color: var(--font-color);
+}
+.text p {
+    opacity: 0;
+    height: 0;
+}
+.show-text p {
+    height: 100%;
+    opacity: 1;
+}
+.about .no-filter img {
+    filter: none;
 }
 @media only screen and (min-width: 550px) {
     .about {
@@ -380,6 +393,7 @@ main #overlay {
 }
 .listing:hover {
     box-shadow: 0 0 20px 2px var(--background-color2);
+    cursor: pointer;
 }
 .listing h2 {
     width: 90%;
@@ -387,12 +401,12 @@ main #overlay {
     line-height: 1.5;
     margin: 0.8rem;
 }
-.listing h2 a {
+.listing a {
     font-family: var(--font-text);
     color: black;
     text-decoration: none;
 }
-.listing h2 a:active {
+.listing a:active {
     color: var(--font-color);
 }
 .listing aside {
