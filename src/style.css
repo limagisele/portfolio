@@ -380,7 +380,6 @@ main #overlay {
 .listings-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
     justify-content: space-evenly;
 }
 .listing {
@@ -390,7 +389,7 @@ main #overlay {
     overflow: hidden;
     margin: 3rem 1rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-    max-height: 300px;
+    max-height: 400px;
     border: 2px solid white;
     background-color: white;
 }
@@ -433,7 +432,8 @@ main #overlay {
     .listing {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 40%;
+        width: 40vw;
+        max-width: 500px;
     }
 }
 
