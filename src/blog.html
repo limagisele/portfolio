@@ -6,32 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gisele Lima</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/b69ad4e5a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <!-- Navbar component -->
+    <header class="top-nav">
+        <!-- Navbar component -->
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a class="menuItem" href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a class="menuItem" href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="work.html">Career</a>
+                    <a class="menuItem" href="work.html">Career</a>
                 </li>
                 <li>
-                    <a class="current-page" href="blog.html">Projects</a>    
+                    <a class="current-page menuItem" href="blog.html">Projects</a>    
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a class="menuItem" href="contact.html">Contact</a>
                 </li>
             </ul>
+            <button class="hamburger">
+                <i class="menuIcon fa-solid fa-bars"></i>
+                <i class="closeIcon fa-solid fa-xmark"></i>
+            </button>
         </nav>
     </header>
     <main>
