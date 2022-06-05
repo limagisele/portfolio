@@ -32,6 +32,7 @@ nav {
 .menu {
     display: flex;
     position: fixed;
+    top: 0;
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
@@ -64,6 +65,7 @@ nav {
     background: white;
     cursor: pointer;
     display: block;
+    color: black;
 }
 .closeIcon {
     display: none;
@@ -71,7 +73,6 @@ nav {
 .showMenu {
     transform: translateY(0);
     z-index: 3;
-    position: absolute;
 }
 
 @media only screen and (min-width: 600px) {
@@ -277,8 +278,9 @@ main #overlay {
     width: 100%;
     height: 2rem;
     position: sticky;
-    top: 0;
+    top: 50px;
     margin-top: 1rem;
+    background-color: white;
 }
 .career-button a {
     text-decoration: none;
@@ -359,7 +361,7 @@ main #overlay {
 @media only screen and (min-width: 700px) {
     .career-button {
         width: 100%;
-        z-index: 2;
+        z-index: 3;
     }
     .career-button a {
         width: 25%;
