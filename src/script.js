@@ -1,3 +1,4 @@
+// Hamburger toggle menu
 $(document).ready(function () {
   const menu = document.querySelector(".menu");
   const menuItems = document.querySelectorAll(".menuItem");
@@ -20,12 +21,14 @@ $(document).ready(function () {
   hamburger.addEventListener("click", toggleMenu);
 });
 
+// Make entire project cards clickable
 $(document).ready(function () {
   $(".listing").click(function () {
     document.location = $(this).find("a").attr("href");
   });
 });
 
+// Make cards on about page interactive showing text and removing filter on click
 $(document).ready(function () {
   $(".about").on("click", function () {
     $(this).find(".text").toggleClass("show-text");
@@ -33,6 +36,7 @@ $(document).ready(function () {
   });
 });
 
+// Add alert message on static form from contact page
 $(document).ready(function () {
   $("[type='submit']").on("click", function () {
     alert(
