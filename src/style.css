@@ -515,6 +515,9 @@ main #overlay {
     margin: 2rem auto;
     box-shadow: 0.5rem 0.5rem var(--font-color), -0.5rem -0.5rem var(--background-color2);
 }
+.post iframe {
+    margin: 2rem auto;
+}
 #post-footer {
     display: flex;
     justify-content: space-between;
@@ -554,6 +557,11 @@ main #overlay {
         margin-top: 2rem;
     }
     .post img {
+        max-width: 500px;
+        float: right;
+        margin: 3rem 1.5rem;
+    }
+    .post iframe {
         max-width: 500px;
         float: right;
         margin: 3rem 1.5rem;
